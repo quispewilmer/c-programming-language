@@ -7,6 +7,7 @@ int main() {
     int base = 2, exp = 5;
     int binarray[] = {0, 1, 3, 4, 7, 9, 10, 30, 85, 90};
     int shellarray[] = {5, 3, 10, 2, 1, 1, 9, 80, 56};
+    int quickarray[] = {5, 3, 10, 2, 9, 13, 1, 20, 8};
     int searchinbinarray = 70;
 
     printf("Hello world!\n");
@@ -16,6 +17,14 @@ int main() {
     shellsort(shellarray, 9);
     for (int i = 0; i < 9; i++) {
         printf("%d ", shellarray[i]);
+
+        if (i == 8) 
+            printf("\n");
+    }
+    printf("Sorted array with quick sort is: \n");
+    quicksort(quickarray, 0, 8);
+    for (int i = 0; i < 9; i++) {
+        printf("%d ", quickarray[i]);
 
         if (i == 8) 
             printf("\n");
