@@ -2,6 +2,7 @@
 #include "math.h"
 #include "search.h"
 #include "algorithms.h"
+#include "strings.h"
 
 int main() {
     int base = 2, exp = 5;
@@ -9,6 +10,8 @@ int main() {
     int shellarray[] = {5, 3, 10, 2, 1, 1, 9, 80, 56};
     int quickarray[] = {5, 3, 10, 2, 9, 13, 1, 20, 8};
     int searchinbinarray = 70;
+    char sentence[] = "Hello world";
+    char testsentence[] = "Hello world";
 
     printf("Hello world!\n");
     printf("Exponential result is: %d\n", power(&base, &exp));
@@ -29,6 +32,9 @@ int main() {
         if (i == 8) 
             printf("\n");
     }
+    printf("The hex direction of ´base´ is: %x\n", &base);
+    printf("Length of sentence is: %d\n", strlength(sentence));
+    printf("The strings are %sthe same\n", strcompare(sentence, testsentence) == 1 ? "" : "not ");
 
     return 0;
 }
