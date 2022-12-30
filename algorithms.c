@@ -28,12 +28,13 @@ void quicksort(int *arr, int start, int end) {
 
     for (int i = start; i < end; i++) {
         if (arr[i] < arr[pivot]) {
-            exchange(arr, shortest + 1, i);
+            exchange(arr, start + shortest + 1, i);
             shortest++;
         }
     }
 
     exchange(arr, start + shortest + 1, pivot);
+    pivot = start + shortest + 1;
 
     quicksort(arr, start, pivot - 1);
     quicksort(arr, pivot + 1, end);

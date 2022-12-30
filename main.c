@@ -8,7 +8,7 @@ int main() {
     int base = 2, exp = 5;
     int binarray[] = {0, 1, 3, 4, 7, 9, 10, 30, 85, 90};
     int shellarray[] = {5, 3, 10, 2, 1, 1, 9, 80, 56};
-    int quickarray[] = {5, 3, 10, 2, 9, 13, 1, 20, 8};
+    int quickarray[] = {51, 30, 10, 2, 90, 13, 1, 20, 8};
     int searchinbinarray = 70;
     char sentence[] = "Hello world";
     char testsentence[] = "Hello world";
