@@ -1,10 +1,10 @@
 int strlength(char *s) {
-    int i;
+    char *p = s;
 
-    for (i = 0; *s != '\0'; i++, s++)
-        ;
+    while (*p != '\0')
+        p++;
 
-    return i;
+    return p - s;
 }
 
 int strcompare(char *x, char *y) {
@@ -18,6 +18,6 @@ int strcompare(char *x, char *y) {
 }
 
 void strcopy(char *x, char *y) {
-    for (; (*x = *y) != '\0'; x++, y++)
+    while (*x++ = *y++)
         ;
 }

@@ -38,7 +38,19 @@ int main() {
     printf("Length of sentence is: %d\n", strlength(sentence));
     printf("The strings are %sthe same\n", strcompare(sentence, testsentence) == 1 ? "" : "not ");
     strcopy(voidsentence, sentence);
-    printf("The content of `voidsentence` is: %s\0", voidsentence);
+    printf("The content of `voidsentence` is: %s\n", voidsentence);
+
+    int a = 3;
+    int *b = &a;
+    int c[] = {3, 6, 7, 8};
+    int *d = c;
+    char *e = "Hola mundo";
+    char *f = e;
+
+    *d += 2;
+
+    printf("Test value is: %d\n", *d);
+    printf("%s", f);
 
     return 0;
 }
