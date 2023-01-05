@@ -1,4 +1,4 @@
-#define MAXLINES 100000
+#define MAXSIZE 100000
 
 char *alloc(int n);
 

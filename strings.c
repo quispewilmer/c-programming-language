@@ -8,13 +8,11 @@ int strlength(char *s) {
 }
 
 int strcompare(char *x, char *y) {
-    int result = 0;
-
     for (; *x == *y; x++, y++)
         if (*x == '\0')
-            result = 1;
+            return 0;
 
-    return result;
+    return y - x;
 }
 
 void strcopy(char *x, char *y) {
