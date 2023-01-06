@@ -1,9 +1,23 @@
 #include <stdio.h>
+#include <stddef.h>
+
 #include "math.h"
 #include "search.h"
 #include "algorithms.h"
 #include "strings.h"
 #include "inout.h"
+#include "cstructs.h"
+
+struct point makepoint(int x, int y) {
+    struct point temp, *result;
+
+    result = &temp;
+
+    result->x = 23;
+    result->y = 24;
+
+    return *result;
+}
 
 int main(int argc, char *argv[]) {
     int base = 2, exp = 5;
@@ -15,6 +29,14 @@ int main(int argc, char *argv[]) {
     char testsentence[] = "Hello world";
     char voidsentence[] = "";
     char arrtest[10];
+    struct point p;
+    struct rectangle rectangle;
+
+    p.x = 0;
+    p.y = 0;
+
+    rectangle.p1 = makepoint(0, 0);
+    rectangle.p2 = makepoint(5, 10);
 
     printf("The size of array `quickarray`: %d\n", sizeof quickarray / sizeof quickarray[0]);
 
